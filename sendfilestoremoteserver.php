@@ -18,7 +18,7 @@ if ( isset($_FILES['uploadedfile']) ) {
    'name' => $target_file
  );
  $curl = curl_init();
- curl_setopt($curl, CURLOPT_URL, 'http://uniquefitness.net/handler.php');
+ curl_setopt($curl, CURLOPT_URL, 'http://yourremoteserverdomain/handler.php');
  curl_setopt($curl, CURLOPT_TIMEOUT, 30);
  curl_setopt($curl, CURLOPT_POST, 1);
  curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
